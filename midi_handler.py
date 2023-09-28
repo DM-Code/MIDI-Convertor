@@ -1,12 +1,11 @@
 import pygame.midi
 from mido import MidiFile
 
-from main import line_space
-
-
 def stop():
     pygame.midi.quit()
 
+def line_space():
+    print("______________________________________________")
 
 class MidiHandler:
 
@@ -110,3 +109,4 @@ class MidiHandler:
             channel_count += 1
 
         return channel_count
+
